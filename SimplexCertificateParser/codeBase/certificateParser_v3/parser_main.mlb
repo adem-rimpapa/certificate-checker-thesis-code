@@ -37,6 +37,6 @@ in
 
 end
 
-/Volumes/a3r/macOS12_VM_Shared/certificate_checker_v14.sml
+../../../certificate_checker_v14.sml
 certificate_grammar.sml
 parser_main.sml
