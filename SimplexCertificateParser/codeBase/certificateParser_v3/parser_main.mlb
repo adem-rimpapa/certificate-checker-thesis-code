@@ -1,0 +1,42 @@
+(* MLB file for simplex certificate parser *)
+(* Combinator parsing examples *)
+
+$(SML_LIB)/basis/basis.mlb
+
+../SMLParsecomb/.smackage/lib/cmlib/v2.3.0/cmlib.mlb
+
+(* Parcom proper *)
+local
+  ../SMLParsecomb/src/parse.sig
+  ../SMLParsecomb/src/parse.sml
+
+  ../SMLParsecomb/src/charparse.sig
+  ../SMLParsecomb/src/charparse.sml
+
+  ../SMLParsecomb/src/tokparse.sig
+  ../SMLParsecomb/src/tokparse.sml
+  ../SMLParsecomb/src/langparse.sml
+
+in
+
+  signature PARSER_COMBINATORS
+  signature CHAR_PARSER
+  signature MINI_LANGUAGE_DEF
+  signature LANGUAGE_DEF
+  signature TOKEN_PARSER
+
+  structure ParserCombinators
+  structure CharParser
+  structure BasicParser
+
+
+  functor   TokenParser
+  functor   SimpleStyle
+  functor   JavaStyle
+  functor   MLStyle
+
+end
+
+/Volumes/a3r/macOS12_VM_Shared/certificate_checker_v14.sml
+certificate_grammar.sml
+parser_main.sml
