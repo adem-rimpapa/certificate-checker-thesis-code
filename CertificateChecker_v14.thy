@@ -584,7 +584,7 @@ Pivot1 Pivot2 Update Success Failure
 config_check_result.Valid checker_result.Valid
 check_config check_certificate
 in SML module_name "CertificateChecker"
-file "/Users/a3r/macOS12_VM_Shared/certificate_checker_v14.sml"
+file "certificate_checker_v14.sml"
 *)
 
 
